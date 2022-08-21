@@ -1,0 +1,6 @@
+#!ipxe
+
+:retry
+dhcp || goto retry
+
+sanboot iscsi:10.0.0.6::::iqn.2019-05.com.nqind.gaghiel:israfel
